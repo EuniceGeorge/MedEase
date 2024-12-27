@@ -1,4 +1,8 @@
 from models import Base, engine
 
-# Create all tables
-Base.metadata.create_all(bind=engine)
+def init_db():
+    # Create all tables
+    Base.metadata.create_all(bind=engine)
+
+if __name__ == "__main__":
+    init_db()

@@ -4,9 +4,10 @@ from pydantic import BaseModel
 from sqlalchemy import create_engine, Column,Integer, String, Date
 from sqlalchemy.orm import sessionmaker, Session
 from sqlalchemy.ext.declarative import declarative_base
-#from sqlalchemy.dialects.sqlite import *
+from sqlalchemy.dialects.sqlite import *
 
 app= FastAPI()
+#mysql://username:password@host:port/database_name
 
 DATABASE_URL = "sqlite:///./test.db"
 
