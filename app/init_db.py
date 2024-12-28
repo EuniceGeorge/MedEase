@@ -3,10 +3,7 @@
 from app.database import Base, engine
 
 def init_db():
-    print("Defining Base...")
-    Base.metadata.create_all(bind=engine)
-    print("Tables created.")
-
+   Base.metadata.create_all(bind=engine)
 
 if __name__ == "__main__":
     init_db()
