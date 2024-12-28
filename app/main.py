@@ -1,4 +1,4 @@
-#create a FastApi App
+# Entry point for FastAPI
 from fastapi import FastAPI, Path
 from pydantic import BaseModel
 
